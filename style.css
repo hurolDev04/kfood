@@ -1,0 +1,327 @@
+:root{
+    --ligth:#FFFBFB;
+    --green:#297447;
+    --orange:#EE9834;
+}
+body{
+    font-size: 20px;
+    background: #faf4f4;
+}
+button{
+    transition: all .3s ease-in;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style-type: none;
+}
+nav .logo h1{
+    font-size: 2em;
+}
+nav .logo span{
+    font-size: inherit;
+}
+
+nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    background: var(--ligth);
+    align-items: center;
+
+}
+nav a{
+    text-decoration:  none;
+    font-size: 20px;
+    color: var(--ligth);
+
+}
+nav ul li{
+    padding: 6px 10px;
+    background: var(--green);
+    border-radius: 6px;
+
+}
+nav ul{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    color: var(--ligth);
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+}
+.logo div{
+    display: flex;
+    align-items: center;
+}
+nav ul :nth-child(4){
+    background: rgb(240, 203, 81);
+}
+.command_link{
+    color: var(--green);
+}
+nav .logo h1{
+    color: var(--orange);
+}
+nav .logo span{
+    color: var(--green);
+}
+
+/* BANNIERE*/
+
+.banniere{
+    margin-top: 50px;
+    width: inherit;
+    height: 450px;
+    background: url(image/poulet.jpg) no-repeat center;
+    background-size: cover;
+    color: var(--ligth);
+    text-align: center;
+    font-size: 2em;
+}
+.banniere h1{
+    padding-top: 150px;
+}
+
+/* MENU */
+
+.menu{
+    text-align: center;
+    padding-top: 30px;
+    background: #faf4f4;
+}
+.menu h1{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--orange);
+    font-style: italic;
+    text-decoration: underline var(--green);
+    text-transform: capitalize;
+}
+.menu form{
+    font-size: 30px;
+}
+.menu form select{
+    height: 30px;
+    color: green;
+    font-size: 20px;
+
+}
+.plat{
+    width: 30%;
+    height: 400px;
+    display: grid;
+    grid-template-rows: 200px 50px 100px;
+}
+.plat h3{
+    text-decoration: underline var(--green);
+    color: var(--orange);
+    text-transform: capitalize;
+    font-size: 25px;
+}
+.plat .options{
+    font-size: 20px;
+}
+.plat .options button{
+    font-size: 18px;
+    padding: 6px 15px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    color: var(--ligth);
+    background-color: var(--green);
+}
+.plat .options :nth-child(1){
+    background: var(--orange);
+}
+.command_form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.plats .bgimg{
+    grid-row: 1/2;
+    background: url(image/HamBurger.jpg) no-repeat center;
+    
+}
+.plats :nth-child(2) .bgimg{
+    background: url(image/biscuit.jpg) no-repeat center;
+}
+.plats :nth-child(3) .bgimg{
+    background: url(image/chocolat.jpg) no-repeat center;
+}
+.plats :nth-child(4) .bgimg{
+    background: url(image/fritepomme.jpg) no-repeat center;
+}
+.plats :nth-child(5) .bgimg{
+    background: url(image/kwui.jpg) no-repeat center;
+}
+.plats :nth-child(6) .bgimg{
+    background: url(image/nouille.jpg) no-repeat center;
+}
+.plats{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* pRESENT*/
+.present .btn{
+    display: flex;
+    justify-content: center;
+}
+.present .btn button{
+    padding: 6px 15px;
+    color: var(--ligth);
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+.present .btn .btn_command{
+    background: var(--orange);
+}
+.present .btn .btn_contact{
+    background: var(--green);
+}
+.present{
+    margin: 50px 100px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.present .bgimg{
+    grid-column: 1/2;
+    background: url(image/logo.png) center no-repeat;
+}
+.present .info p{
+    padding: 30px 50px;
+    text-align: justify;
+}
+.present .info{
+    padding-top: 50px;
+}
+.present .info h1{
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline var(--green);
+    color: var(--orange);
+}
+/*commande*/
+.commande{
+    padding-top: 30px;
+    background: var(--orange);
+}
+.commande h1{
+    text-align: center;
+}
+.commande div{
+    display: flex;
+    justify-content: center;
+}
+.commande input{
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: var(--green);
+    font-size: 20px;
+    padding: 6px 10px;
+    width: 40%;
+}
+textarea{
+    font-size: 18px;
+    padding: 6px 15px;
+    width: 80%;
+}
+.inputError{
+    border: 2px solid red !important;
+    border-radius: 3px;
+}
+.commande button{
+    font-size: 20px;
+    background: var(--green);
+    padding: 6px 15px;
+    border-radius: 5px;
+    color: var(--ligth);
+    border: none;
+    outline: none;
+}
+.date_form{
+    width: 465px;
+}
+.commande h1{
+    text-transform: capitalize;
+    font-size: 40px;
+}
+@media screen and (max-width:950px){
+    nav{
+        display: block;
+    }
+    nav .logo{
+        text-align: center;
+    }
+    nav ul{
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .logo div{
+        justify-content: center;
+    }
+    /* MENU*/
+    .plat{
+        width: 45%;
+    }
+    /*About*/
+    .about{
+        display: none;
+    }
+
+ 
+}
+
+
+@media screen and (max-width:400px){
+    a{
+        font-size: 15px;
+    }
+    nav ul li{
+        padding: 4px 6px;
+    }
+    /* MENU*/
+    .plat{
+        width: 90%;
+    }
+    .commande input{
+        width: 90%;
+        margin-top: 1em;
+    }
+    
+    textarea{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:300px){
+    nav ul li{
+        padding: 2px 4px;
+    }
+    nav a{
+        font-size: 14px;
+    }
+
+}
+

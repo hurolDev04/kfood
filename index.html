@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <div><img src="image/logo.png" alt="" width="10%"><h1>K<span>FOOD</span></h1></div>
+            
+        </div>
+        <ul>
+            <li><a href="">Acceuil</a></li>
+            <li><a href="">Recette</a></li>
+            <li><a href="sign/sign.html">se connecter</a></li>
+            <li><a href="#commande" class="command_link">Commander</a></li>
+
+        </ul>
+    </nav>
+    <section class="banniere">
+        <h1>LE PLAISIR C'EST <br> KFOOD</h1>
+    </section>
+    <section class="menu">
+        <h1>menu</h1><br><br>
+        <form action="" name="type_food">
+            <label for="food_type">choisir vos plats selon vous</label>
+            <select name="food_type" id="food_type">
+                <option value="tous">tous</option>
+                <option value="viande">viande</option>
+                <option value="dejeuner">dejeuner</option>
+                <option value="vegetarien">vegetarien</option>
+                <option value="regime">regime</option>
+                <option value="menu personnalise">menu personnalise</option>
+            </select>
+        </form>
+        <br><br><br>
+        <div class="plats">
+            <div class="plat one">
+                <div class="bgimg"></div>
+                <h3>hamburger</h3>
+                <div class="options">
+                    <button>plus</button>
+                    <button>acheter</button>
+                </div>
+            </div>
+            <div class="plat">
+                <div class="bgimg"></div>
+                <h3>biscuit</h3>
+                <div class="options">
+                    <button>plus</button>
+                    <button>acheter</button>
+                </div>
+            </div> <div class="plat ">
+                <div class="bgimg"></div>
+                <h3>chocolat</h3>
+                <div class="options">
+                    <button>plus</button>
+                    <button>acheter</button>
+                </div>
+            </div> <div class="plat one">
+                <div class="bgimg"></div>
+                <h3>fritte</h3>
+                <div class="options">
+                    <button>plus</button>
+                    <button>acheter</button>
+                </div>
+            </div> <div class="plat one">
+                <div class="bgimg"></div>
+                <h3>kui</h3>
+                <div class="options">
+                    <button>plus</button>
+                    <button>acheter</button>
+                </div>
+            </div> <div class="plat one">
+                <div class="bgimg"></div>
+                <h3>nouille</h3>
+                <div class="options">
+                    <button>plus</button>
+                    <button>acheter</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="present">
+            <div class="bgimg"></div>
+            <div class="info">
+                <h1>pourquoi nous choisir ?</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro rem, ab sit magni facere voluptatum, et minus eum suscipit quibusdam non. Delectus cupiditate suscipit veniam officia similique nulla vero hic.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste dolores ratione nostrum vero nulla at quod perspiciatis modi. Doloribus illo tenetur at maxime hic harum odio ullam optio explicabo ratione.
+                </p>
+                <div class="btn">
+                    <div>
+                        <button class="btn_command">commander</button>
+                        <button class="btn_contact">contacter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="commande" id="commande">
+        <h1>commande express</h1><br><br>
+        <div class="command_form">
+            <form action="">
+                <input type="text" placeholder="nom" id="userName" required>
+                <input type="email" placeholder="email" required id="userMail"><br><br>
+                <input type="text" placeholder="adresse ou tel" required>
+                <input type="text" placeholder="nom du plat" required><br><br>
+                <input type="text" placeholder="nombre de plat" required>
+                <input type="date" name="" id="" placeholder="date de livraison" class="date_form" required><br><br>
+                <textarea name="" id="" cols="89" rows="7" placeholder="description de la commande" required></textarea><br><br>
+                <div class="form_sub">
+                    <button type="submit" id="commandSubmit">commander</button>
+                </div><br>
+            </form>
+        </div>
+    </section>
+    <script src="form_check.js"></script>
+</body>
+</html>
