@@ -17,6 +17,12 @@ body{
     overflow: hidden;
     background: var(--green);
 }
+h1 i{
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(240, 203, 81);
+    
+}
 .compte{
     width: 80%;
     height: 60%;

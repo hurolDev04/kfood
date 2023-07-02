@@ -1,0 +1,116 @@
+:root{
+    --ligth:#FFFBFB;
+    --green:#297447;
+    --orange:#EE9834;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e4e2e2;
+}
+input{
+    outline: none;
+}
+header{
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.user_profile{
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user_profile i{
+    font-size: 35px;
+    color: #fbfbfb;
+    padding: 12px 15px;
+    background: #d9d9d9;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+
+}
+.user_profile a{
+    margin-left: 30px;
+ 
+    padding: 5px 12px;
+    border-radius: 4px;
+    background-color: var(--green);
+    color: var(--ligth);
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.user_profile h3{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+header input{
+    padding: 5px 12px;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    transition:all .3s ease-in;
+}
+header button{
+    background-color: var(--green);
+    color: var(--ligth);
+    outline: none;
+    border: none;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-size: 16px;
+}
+.plat_recent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.recette_card{
+    height: 450px;
+    width: 300px;
+    display: grid;
+    grid-template-rows: 200px 50px 50px 70px 130;
+    text-align: center;
+}
+
+main .bgimg{
+    grid-row: 1/2;
+    background-size: contain;
+}
+
+main .card1 .bgimg{
+    background: url(../image/nouille.jpg)no-repeat center;   
+}
+main .card2 .bgimg{
+    background: url(../image/chocolat.jpg)no-repeat center;  
+}
+main .card3 .bgimg{
+    background: url(../image/kwui.jpg)no-repeat center;  
+}
+.recette_card h2{
+    color: var(--green);
+}
+
+.recette_card  a{
+    text-decoration: none;
+    text-align: center;
+    color: var(--ligth);
+    background:var(--orange);
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 5px 12px;
+    font-weight: bold;
+    width: 15%;
+}
+.cook{
+    border: none;
+    outline: none;
+    background: #e4e2e2;
+}
+
